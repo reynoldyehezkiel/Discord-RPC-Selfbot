@@ -23,3 +23,12 @@ app.get('/', (_, res) => {
   res.send('Presence is ready!');
 });
 app.listen(3000)
+
+const Eris = require("eris");
+const keepAlive = require("./server");
+keepAlive();
+
+//your can put your token in a .env file to secure it
+const bot = new Eris(process.env.TOKEN); 
+ 
+bot.connect();

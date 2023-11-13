@@ -2,25 +2,25 @@
 
 module.exports = {
     // spotify/game/twitch
-    "mode": "", 
+    "mode": "game", 
     // dnd/online/idle
-    "status": "",
+    "status": "dnd",
 
     "game": {
-        "applicationID": "",
+        "applicationID": "1067987698129846353",
 
-        "name": "", // title
-        "details": "", // first row below title
-        "state": "", // row below first row
+        "name": "with Yeji", // title
+        "details": "just the two of us", // first row below title
+        "state": "at her house (2 of 2)", // row below first row
 
-        "largeImageKey": "", // Large Image
-        "largeImageText": "", // the text when img surrounded (default is largeimage name in dev portal)
+        "largeImageKey": "no", // Large Image
+        "largeImageText": "⛔ No Entry ⛔", // the text when img surrounded (default is largeimage name in dev portal)
 
         "smallImageKey": "", // Small Image
         "smallImageText": "",
         
         // Date.now() Epoch timestamps
-        "startTimestamp": "", // time elapsed since this timestamp (increase ++)
+        "startTimestamp": Date.now(), // time elapsed since this timestamp (increase ++)
         "endTimestamp": "" // time left since this timestamp (decrease --)
     },
     "twitch": {
@@ -40,11 +40,11 @@ module.exports = {
         "endTimestamp": ""
     },
     "spotify": {
-        "name": "", // for exemple listening to {name} instead of listening to spotify
+        "name": "Tzuyu", // for exemple listening to {name} instead of listening to spotify
         "details": "", // title
         "state": "", // row below title
 
-        "largeImageKey": "", // https://github.com/mewzax/Discord-RPC-Selfbot/wiki/Spotify-API
+        "largeImageKey": "spotify:ab67706c0000bebb0b425b53e3ca54912ec11b81", // https://github.com/mewzax/Discord-RPC-Selfbot/wiki/Spotify-API
         "largeImageText": "", // will also be second row below title
         
         "smallImageKey": "",
